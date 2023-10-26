@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+
+.nav-bar {
+  background-color: rgb(227, 139, 23);
+}
+.logo {
+  width: 80px;
+}
+.nav-bar .logo {
+  float: left;
+  padding: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style for the navigation links (right side) */
+.nav-bar ul {
+  float: right;
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+}
+.nav-bar li {
+  display: inline;
+  margin: 0 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-bar a {
+  text-decoration: none;
+  color: #141313;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.banner {
+  background-color: rgb(144, 87, 14);
+  background-image: url(../public/banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: rgb(10, 11, 8);
+  font-size: 32px;
+  font-weight: bold;
+  float: right;
+}
+
+.banner p {
+  font-size: 20px;
+  color: rgb(199, 50, 50);
+  opacity: .7;
+}
+
+.cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  flex-basis: 225px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 13px;
+  padding-bottom: 20px;
+  background-color: white;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+.card > img {
+  width: 100%;
+  height: 60%;
+  align-self: center;
+  border-radius: 5px;
+  object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card > h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.info-group {
+  display: flex;
+  align-items: center;
+}
+
+.info-group > img {
+  height: 11px;
+  margin-right: 8px;
+}
+
+.info-group > p {
+  margin-block: 3px;
+  font-size: 12px;
+  color: #2B283A;
 }
