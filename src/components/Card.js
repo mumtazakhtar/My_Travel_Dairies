@@ -1,19 +1,17 @@
 import React from 'react';
 import '../App.css'
 
-export default function Card () {
+export default function Card (props) {
   return (
     <div className='card'>
-      <img src="card1 (1).jpg" alt='card1'/>
-      <h3>Mr. Whiskerson</h3>
+      <img src={props.image} alt='card1'/>
+      <h3>{props.name}</h3>
       <div className="info-group">
-        {/* <img src="./images/phone-icon.png" alt='icon'/> */}
-        <p>(212) 555-1234</p>
+        <a href="">Explore {props.name}</a>
       </div>
-      <div className="info-group">
-        {/* <img src="./images/mail-icon.png" alt='cicon'/> */}
+      {/* <div className="info-group">
         <p>mr.whiskaz@catnap.meow</p>
-      </div>
+      </div> */}
 
     </div>
   )

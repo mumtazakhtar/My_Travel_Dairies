@@ -51,28 +51,31 @@
   opacity: .7;
 }
 
+.cards-heading {
+  text-align: center;
+}
+
 .cards {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
+  margin-left: 38px;
 }
 
 .card {
-  flex-basis: 225px;
+  flex-basis: 150px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 13px;
-  padding-bottom: 20px;
+  padding: 8px 50px;
   background-color: white;
   margin-top: 30px;
-  margin-right: 50px;
+  margin-right: 22px;
 }
 .card > img {
-  width: 100%;
+  width: 150%;
   height: 60%;
   align-self: center;
   border-radius: 5px;
@@ -81,7 +84,10 @@
 
 .card > h3 {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0;
+  padding: 0;
 }
 
 .info-group {
